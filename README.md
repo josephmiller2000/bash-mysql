@@ -16,3 +16,11 @@ sh bashsql.sh
 ```
 
 
+# Setup Cron Job
+
+Run this script every 5 minutes using a crontab in ubuntu. A special cronjob application to run all crons based on time intervals.
+
+``` 
+ */5 * * * * /root/bashsql.sh > /dev/null 2>&1
+ ```
+ 
